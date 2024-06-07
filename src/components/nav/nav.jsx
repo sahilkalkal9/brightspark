@@ -42,7 +42,7 @@ function Nav() {
                     {
                         user ? (
                             <Link to='/profile'>
-                                <img className="uimg" src={pu} />
+                                <img alt="user" className="uimg" src={pu} />
                             </Link>
                         )
                             : <Link to='/login'>

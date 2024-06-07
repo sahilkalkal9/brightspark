@@ -93,38 +93,38 @@ function Home() {
                     <p className="subHead">Where Strategy Meets BrightSpark. <br /> Your Success Story Begins with BrightSpark</p>
                     <div className="services">
                         <div className="service">
-                            <img alt="" className="simg" src={seo} />
+                            <img alt="image" className="simg" src={seo} />
                             <p className="sname">Search Engine Optimisation</p>
                             <p className="sdesc">Boost your online visibility with our expert SEO services. We specialize in optimizing your website to rank higher on search engines, driving organic traffic and increasing your digital presence. </p>
 
                         </div>
                         <div className="service">
-                            <img alt="" className="simg" src={ppc} />
+                            <img alt="image" className="simg" src={ppc} />
                             <p className="sname">Pay Per Click</p>
                             <p className="sdesc">Unlock instant traffic and boost conversions with our pay-per-click (PPC) services. We create and manage targeted PPC campaigns that deliver immediate results, ensuring your ads reach potential customers effectively.</p>
 
                         </div>
 
                         <div className="service">
-                            <img alt="" className="simg" src={sm} />
+                            <img alt="image" className="simg" src={sm} />
                             <p className="sname">Social Media Management</p>
                             <p className="sdesc">Enhance your brand's online presence with our comprehensive social media management services. We create engaging content, manage your profiles, and interact with your audience to build a loyal community. Let us help you drive engagement and grow your social media influence!</p>
 
                         </div>
                         <div className="service">
-                            <img alt="" className="simg" src={cretive} />
+                            <img alt="image" className="simg" src={cretive} />
                             <p className="sname">Content Creation</p>
                             <p className="sdesc">Bright Spark is a cutting-edge digital marketing agency dedicated to transforming your online presence into a powerhouse of engagement and growth.</p>
 
                         </div>
                         <div className="service">
-                            <img alt="" className="simg" src={em} />
+                            <img alt="image" className="simg" src={em} />
                             <p className="sname">Email Marketing</p>
                             <p className="sdesc">Bright Spark is a cutting-edge digital marketing agency dedicated to transforming your online presence into a powerhouse of engagement and growth.</p>
 
                         </div>
                         <div className="service">
-                            <img alt="" className="simg" src={monitor} />
+                            <img alt="image" className="simg" src={monitor} />
                             <p className="sname">Analytics and Reporting</p>
                             <p className="sdesc">Bright Spark is a cutting-edge digital marketing agency dedicated to transforming your online presence into a powerhouse of engagement and growth.</p>
 
@@ -146,7 +146,7 @@ function Home() {
                             <div className="contactMeds">
                                 <div className="contactMed">
                                     <div className="contactMedLeft">
-                                        <img alt="" className="cimg" src={gps} />
+                                        <img alt="image" className="cimg" src={gps} />
                                     </div>
                                     <div className="contactMedRight">
                                         <p className="medHead">HEAD OFFICE</p>
@@ -161,7 +161,7 @@ function Home() {
 
                                 <div className="contactMed">
                                     <div className="contactMedLeft">
-                                        <img alt="" className="cimg" src={email} />
+                                        <img alt="image" className="cimg" src={email} />
                                     </div>
                                     <div className="contactMedRight">
                                         <p className="medHead">EMAIL SUPPORT</p>
@@ -178,7 +178,7 @@ function Home() {
 
                                 <div className="contactMed">
                                     <div className="contactMedLeft">
-                                        <img alt="" className="cimg" src={phone} />
+                                        <img alt="image" className="cimg" src={phone} />
                                     </div>
                                     <div className="contactMedRight">
                                         <p className="medHead">LET'S TALK</p>
@@ -194,7 +194,7 @@ function Home() {
 
                                 <div className="contactMed">
                                     <div className="contactMedLeft">
-                                        <img alt="" className="cimg" src={time} />
+                                        <img alt="image" className="cimg" src={time} />
                                     </div>
                                     <div className="contactMedRight">
                                         <p className="medHead">WORKING HOURS</p>
@@ -213,10 +213,10 @@ function Home() {
                                 <p className="heading tl ch">Follow us on social media!!</p>
 
                                 <div className="socials">
-                                    <img alt="" className="social" src={insta} />
-                                    <img alt="" className="social" src={fb} />
-                                    <img alt="" className="social" src={yt} />
-                                    <img alt="" className="social" src={linkedin} />
+                                    <img alt="image" className="social" src={insta} />
+                                    <img alt="image" className="social" src={fb} />
+                                    <img alt="image" className="social" src={yt} />
+                                    <img alt="image" className="social" src={linkedin} />
                                 </div>
                             </div>
 
