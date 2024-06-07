@@ -1,9 +1,8 @@
 import Nav from "../nav/nav";
 import "./login.scss";
-import { auth, firestore } from "../../firebase";
+import { auth } from "../../firebase";
 import { Link, useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
-import { useCollectionData } from "react-firebase-hooks/firestore";
 
 function Login() {
     const navigate = useNavigate();
