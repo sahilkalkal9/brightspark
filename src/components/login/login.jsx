@@ -18,7 +18,7 @@ function Login() {
         if (auth.currentUser) {
             navigate("/profile");
         }
-    });
+    }, [navigate]);
 
     const handleSignIn = async (e) => {
         e.preventDefault();
@@ -36,6 +36,7 @@ function Login() {
             await auth.signInWithEmailAndPassword(email, password);
             navigate("/profile");
         } catch (err) {
+            console.error("Firebase Error:", err);
             const newError = {
                 invalidCredentials: false,
                 manyAttempts: false,
@@ -44,17 +45,20 @@ function Login() {
 
             if (err.code === "auth/user-not-found") {
                 newError.userNotFound = true;
-            } else if (err.code === "auth/wrong-password") {
+                document.getElementById("noUser").style.display = "flex"
+            } else if (err.code === "auth/wrong-password" || err.code === "auth/invalid-credential") {
                 newError.invalidCredentials = true;
+                document.getElementById("invalidCred").style.display = "flex"
             } else if (err.code === "auth/too-many-requests") {
                 newError.manyAttempts = true;
+                document.getElementById("manyAttempts").style.display = "flex"
             }
 
             setError(newError);
         } finally {
             const signInButton = document.getElementById("signInButton");
             if (signInButton) {
-                signInButton.innerHTML = "Log In";
+                signInButton.innerHTML = "Logging In...";
             }
         }
     };
@@ -85,11 +89,11 @@ function Login() {
                         onChange={(e) => handleChange(e, setEmail, "invalidCredentials")}
                         className="contactInp lip"
                     />
-                    {error.userNotFound && (
-                        <p id="noUser" className="incorrect-chatpass">
-                            User not found
-                        </p>
-                    )}
+
+                    <p id="noUser" className="incorrect-chatpass">
+                        User not found
+                    </p>
+
                     <input
                         type="password"
                         value={password}
@@ -99,16 +103,16 @@ function Login() {
                         placeholder="Password"
                         className="contactInp lip"
                     />
-                    {error.invalidCredentials && (
-                        <p id="invalidCred" className="incorrect-chatpass">
-                            Invalid credentials
-                        </p>
-                    )}
-                    {error.manyAttempts && (
-                        <p id="manyAttempts" className="incorrect-chatpass">
-                            Too many attempts. Try after some time or change your password.
-                        </p>
-                    )}
+
+                    <p id="invalidCred" className="incorrect-chatpass">
+                        Invalid credentials
+                    </p>
+
+
+                    <p id="manyAttempts" className="incorrect-chatpass">
+                        Too many attempts. Try after some time or change your password.
+                    </p>
+
                     <input
                         type="submit"
                         id="signInButton"
