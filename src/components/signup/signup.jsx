@@ -92,16 +92,16 @@ function Signup() {
 
 
         } catch (error) {
-            if (error.code === "auth/email-already-in-use") {
+            if (error.code == "auth/email-already-in-use") {
                 setEmailExist(true)
                 document.getElementById("emailExist").style.display = "block";
             }
-            else if (error.code === "auth/weak-password") {
+            else if (error.code == "auth/weak-password") {
                 setInvalidPass(true)
                 document.getElementById("invalidPass").style.display = "block";
             }
 
-            else if (error.code === "auth/invalid-email") {
+            else if (error.code == "auth/invalid-email") {
                 setInvalidEmail(true)
                 document.getElementById("invalidEmail").style.display = "block";
             }
@@ -162,7 +162,7 @@ function Signup() {
     }
 
     const handleBackspaceUsername = (event) => {
-        if (event.key === 'Backspace') {
+        if (event.key == 'Backspace') {
             document.getElementById("capitalUsername").style.display = "none"
             document.getElementById("usernameExist").style.display = "none";
             document.getElementById("twoDots").style.display = "none"
@@ -195,7 +195,7 @@ function Signup() {
     }
 
     const handleBackspaceEmail = (event) => {
-        if (event.key === 'Backspace') {
+        if (event.key == 'Backspace') {
             setEmailExist(false)
             setInvalidEmail(false)
             document.getElementById("emailExist").style.display = "none";
@@ -221,7 +221,7 @@ function Signup() {
     }
 
     const handleBackspacePass = (event) => {
-        if (event.key === 'Backspace') {
+        if (event.key == 'Backspace') {
             setInvalidPass(false)
             document.getElementById("invalidPass").style.display = "none";
         }
