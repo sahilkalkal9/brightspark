@@ -1,0 +1,63 @@
+
+
+.createBox {
+    display: flex;
+    gap: .2cm;
+    margin-top: .5cm;
+    justify-content: center;
+}
+
+.register {
+    font-size: 15px;
+    color: rgb(59, 59, 59);
+}
+
+.cp {
+    cursor: pointer;
+    transition: .2s;
+    border-bottom: 2px solid transparent;
+
+    &:hover {
+        border-bottom: 2px solid blueviolet;
+    }
+}
+
+.incorrect-chatpass {
+    color: red;
+    font-size: 14px;
+}
+
+#emailExist {
+    display: none;
+}
+
+#invalidPass {
+    display: none;
+}
+
+#invalidEmail {
+    display: none;
+}
+
+
+
+
+#usernameExist {
+    display: none;
+}
+
+#whitespaceFound {
+    display: none;
+}
+
+#twoDots {
+    display: none;
+}
+
+#otherThanUnderscore {
+    display: none;
+}
+
+#capitalUsername {
+    display: none;
+}

@@ -1,0 +1,1064 @@
+.no-arrows::-webkit-outer-spin-button,
+.no-arrows::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Hide the arrows in Firefox */
+.no-arrows[type='number'] {
+    -moz-appearance: textfield;
+}
+
+.Home {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5cm;
+}
+
+.introBox {
+    inset: 0;
+    // border: 2px solid red;
+    min-height: 100svh;
+    position: relative;
+    padding: 0.2cm 5vw 4cm 5vw;
+    display: flex;
+    flex-direction: column;
+    // justify-content: space-between;
+    align-items: center;
+    gap: 3cm;
+
+
+    &::before {
+        position: absolute;
+        content: "";
+        inset: 0;
+        background: url("./dmb.jpg") no-repeat center;
+        filter: brightness(30%);
+        background-size: cover;
+        z-index: -1;
+    }
+
+}
+
+.Nav {
+    width: 100%;
+    // border: 1px solid white;
+    padding: .5cm;
+}
+
+.Nav-white {
+    width: auto;
+    padding: .5cm 5vw;
+    background-color: rgb(236, 236, 236);
+}
+
+.menu {
+    display: flex;
+    gap: .3cm;
+    align-items: center;
+}
+
+.nav-box {
+    display: flex;
+    justify-content: space-between;
+    gap: .5cm;
+}
+
+.menu-item {
+    color: white;
+    cursor: pointer;
+    transition: .2s;
+    border-bottom: 2px solid transparent;
+
+    &:hover {
+        border-bottom: 2px solid blueviolet;
+    }
+}
+
+.logo {
+    color: white;
+    font-family: LXGW Wenkai TC;
+    font-size: 30px;
+    font-weight: 600;
+    // text-shadow: 5px 5px 20px blueviolet;
+}
+
+.introDets {
+    // border: 1px solid white;
+    width: fit-content;
+    border-radius: 10px;
+    padding: .5cm .7cm .8cm .7cm;
+    max-width: 18cm;
+    background-color: rgba(255, 255, 255, 0.082);
+    backdrop-filter: blur(3px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .3cm;
+}
+
+.tagline {
+    font-family: Freeman;
+    color: white;
+    font-weight: bolder;
+    font-size: 60px;
+    line-height: 1.9cm;
+    text-align: center;
+    letter-spacing: .055cm;
+
+}
+
+.desc {
+    text-align: center;
+    color: rgb(231, 231, 231);
+    letter-spacing: .015cm;
+    line-height: .55cm;
+    font-weight: 500;
+}
+
+.servicesButton {
+    width: fit-content;
+    padding: .3cm .6cm;
+    margin-top: .5cm;
+    font-size: 16px;
+    background-color: blueviolet;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.servicesMain {
+    padding: 0cm 5vw;
+}
+
+.heading {
+    text-align: center;
+    font-size: 16px;
+    color: blueviolet;
+    font-weight: 600;
+}
+
+.ch {
+    color: #ff5661;
+}
+
+.service {
+    width: 8.5cm;
+    height: auto;
+    // border: 1px solid black;
+    // background-color: rgba(137, 43, 226, 0.08);
+    background-color: #f7ecff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    // gap: .3cm;
+    padding: .5cm;
+    border-radius: 10px;
+    cursor: pointer;
+    // border: 2px solid transparent;
+    transition: .3s;
+    // box-shadow: 0 0 10px rgba(137, 43, 226, 0.247);
+
+
+    &:hover {
+        // border: 2px solid blueviolet;
+        box-shadow: 0 0 10px blueviolet;
+    }
+}
+
+.serviceBox {
+    display: flex;
+    flex-direction: column;
+    gap: .3cm;
+    align-items: center;
+}
+
+.subHead {
+    text-align: center;
+    font-size: 30px;
+    font-family: Freeman;
+    font-weight: 800;
+    letter-spacing: .03cm;
+    line-height: 1cm;
+    // color: blueviolet;
+}
+
+.services {
+    margin-top: 1cm;
+    display: flex;
+    gap: .5cm;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+.simg {
+    width: 1.5cm;
+    height: 1.5cm;
+
+}
+
+.sname {
+    font-size: 22px;
+    line-height: .8cm;
+    margin-top: .5cm;
+    text-align: center;
+}
+
+.sdesc {
+    text-align: center;
+    font-size: 15px;
+}
+
+.lmore {
+    padding: .3cm .5cm;
+    border: none;
+    background-color: blueviolet;
+    color: white;
+    border-radius: 10px;
+    font-size: 16px;
+    margin-top: .7cm;
+    cursor: pointer;
+
+
+}
+
+.contact {
+    margin-top: 2cm;
+    padding: 0cm 5vw;
+}
+
+.contactBox {
+    margin-top: 1cm;
+    // border: 1px solid black;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: .3cm;
+}
+
+.cimg {
+    width: 1.1cm;
+    // border-radius: 10000px;
+    // box-shadow: 0 0 10px blueviolet;
+}
+
+.contactMed {
+    display: flex;
+    align-items: flex-start;
+    width: 7.5cm;
+    gap: .3cm;
+    // background-color: rgba(137, 43, 226, 0.08);
+    // background-color: #fee4e5;
+    padding: .3cm;
+    border-radius: 10px;
+    height: fit-content;
+    transition: .2s;
+    cursor: pointer;
+
+    &:hover {
+        // background-color: rgba(137, 43, 226, 0.08);
+        background-color: #ffeff0;
+
+    }
+}
+
+.medDetText {
+    color: rgb(50, 50, 50);
+    font-size: 14px;
+}
+
+.medHead {
+    font-size: 16px;
+}
+
+.contactLeft {
+    width: 18cm;
+
+    padding: .3cm;
+    display: flex;
+    flex-direction: column;
+    gap: .1cm;
+
+}
+
+.contactMeds {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .3cm;
+    justify-content: center;
+    align-items: flex-start;
+    // border: 1px solid red;
+    height: fit-content;
+    margin-top: .3cm;
+    padding: .3cm 0cm;
+    border-top: thin solid rgb(204, 204, 204);
+    border-bottom: thin solid rgb(204, 204, 204);
+}
+
+.head-sub {
+    font-size: 30px;
+}
+
+
+
+.contactRight {
+    width: 18cm;
+    // border: 1px solid green;
+    padding: .3cm;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    width: calc(100% - .8cm);
+    border-radius: 10px;
+    gap: .3cm;
+    // background-color: rgba(137, 43, 226, 0.08);
+    background-color: #ffeff0;
+    padding: .3cm .4cm .4cm;
+
+}
+
+.msgSent {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    background-color: #fee4e5;
+    border-radius: 10px;
+    gap: .3cm;
+}
+
+.sentText {
+    font-size: 18px;
+}
+
+.closeMsg {
+    width: fit-content;
+    padding: .2cm 1cm;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 10px;
+    border: none;
+    background-color: #ff5661;
+    color: white;
+}
+
+
+
+
+
+.contactInp {
+    background-color: transparent;
+    padding: .3cm;
+    border: 2px solid #fda3a9;
+    border-radius: 10px;
+    font-size: 16px;
+
+    &:focus {
+        outline: none;
+        border: 2px solid #ff5661;
+    }
+}
+
+.contactText {
+    padding: .3cm;
+    background-color: transparent;
+    padding: .3cm;
+    height: 4cm;
+    border: 2px solid #ff979e;
+    border-radius: 10px;
+    font-size: 16px;
+
+    &:focus {
+        outline: none;
+        border: 2px solid #ff5661;
+    }
+}
+
+.subForm {
+    font-size: 16px;
+    padding: .3cm .5cm;
+    background-color: #ff5661;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.brightspark {
+    color: white;
+    border: 2px solid blueviolet;
+    border-radius: 1000px;
+    padding: .1cm .3cm;
+    transition: .2s;
+    font-size: 14px;
+    cursor: pointer;
+    box-shadow: 0 0 8px blueviolet;
+
+
+}
+
+.tl {
+    text-align: left;
+}
+
+.socialsBox {
+    margin-top: .2cm;
+}
+
+.socials {
+    display: flex;
+    margin-top: .2cm;
+    gap: .2cm;
+}
+
+.social {
+    width: .8cm;
+    height: auto;
+    cursor: pointer;
+    transition: .2s;
+    border-radius: 1000px;
+
+    &:hover {
+        box-shadow: 0 0 10px #ff5661;
+    }
+}
+
+.logo-white {
+    color: black;
+}
+
+.menu-item-white {
+    color: black;
+}
+
+
+.mb3 {
+    margin-bottom: .2cm;
+}
+
+@media only screen and (max-width : 1500px) {
+
+
+    .subHead {
+        font-size: 28px;
+    }
+
+    .heading {
+        font-size: 15px;
+    }
+
+    .service {
+        width: 8cm;
+    }
+
+    .sname {
+        font-size: 20px;
+    }
+
+    .sdesc {
+        font-size: 14px;
+    }
+
+    .simg {
+        width: 1.3cm;
+        height: 1.3cm;
+    }
+
+    .contactLeft {
+        width: 17cm;
+
+
+    }
+
+
+    .contactRight {
+        width: 17cm;
+
+    }
+
+    .head-sub {
+        font-size: 28px;
+    }
+
+    .contactMed {
+        width: 7cm;
+    }
+
+}
+
+@media only screen and (max-width : 1300px) {
+    .tagline {
+        font-size: 55px;
+        line-height: 1.6cm;
+        letter-spacing: .05cm;
+    }
+
+    .introDets {
+        max-width: 16cm;
+    }
+
+    .subHead {
+        font-size: 26px;
+        line-height: .9cm;
+    }
+
+    .heading {
+        font-size: 15px;
+    }
+
+    .service {
+        width: 8cm;
+    }
+
+    .sname {
+        font-size: 20px;
+    }
+
+    .sdesc {
+        font-size: 14px;
+    }
+
+    .simg {
+        width: 1.3cm;
+        height: 1.3cm;
+    }
+
+    .contactLeft {
+        width: 16cm;
+
+
+    }
+
+
+    .contactRight {
+        width: 16cm;
+
+    }
+
+    .head-sub {
+        font-size: 24px;
+    }
+
+    .contactMed {
+        width: 6cm;
+    }
+
+}
+
+
+@media only screen and (max-width : 1000px) {
+    .tagline {
+        font-size: 50px;
+        line-height: 1.5cm;
+        letter-spacing: .05cm;
+    }
+
+    .introDets {
+        max-width: 14cm;
+    }
+
+    .subHead {
+        font-size: 24px;
+        line-height: .8cm;
+    }
+
+    .heading {
+        font-size: 14px;
+    }
+
+    .service {
+        width: 8cm;
+    }
+
+    .sname {
+        font-size: 20px;
+    }
+
+    .sdesc {
+        font-size: 14px;
+    }
+
+    .simg {
+        width: 1.3cm;
+        height: 1.3cm;
+    }
+
+    .contactBox {
+        flex-direction: column-reverse;
+    }
+
+    .contactLeft {
+        width: 100%;
+
+
+    }
+
+
+    .contactRight {
+        width: auto;
+
+    }
+
+    .head-sub {
+        font-size: 22px;
+    }
+
+    .contactMed {
+        width: 8cm;
+    }
+
+
+
+}
+
+@media only screen and (max-width : 800px) {
+    .tagline {
+        font-size: 45px;
+        line-height: 1.4cm;
+        letter-spacing: .05cm;
+    }
+
+    .dsit {
+        display: none;
+    }
+
+    .introBox {
+        gap: 4cm;
+    }
+
+    .introDets {
+        max-width: 13cm;
+    }
+
+    .brightspark {
+        font-size: 12px;
+    }
+
+    .subHead {
+        font-size: 24px;
+        line-height: .8cm;
+    }
+
+    .heading {
+        font-size: 14px;
+    }
+
+    .service {
+        width: 7cm;
+    }
+
+    .sname {
+        font-size: 19px;
+    }
+
+    .sdesc {
+        font-size: 14px;
+    }
+
+    .simg {
+        width: 1.2cm;
+        height: 1.2cm;
+    }
+
+    .contactBox {
+        flex-direction: column-reverse;
+    }
+
+    .contactLeft {
+        width: 100%;
+
+
+    }
+
+
+    .contactRight {
+        width: auto;
+
+    }
+
+    .head-sub {
+        font-size: 22px;
+    }
+
+    .contactMed {
+        width: 8cm;
+    }
+
+    .logo{
+        font-size: 28px;
+    }
+
+
+
+}
+
+@media only screen and (max-width : 700px) {
+    .tagline {
+        font-size: 45px;
+        line-height: 1.4cm;
+        letter-spacing: .05cm;
+    }
+    .logo{
+        font-size: 26px;
+    }
+
+    .introBox {
+        gap: 4cm;
+    }
+
+    .introDets {
+        max-width: 12cm;
+    }
+
+    .brightspark {
+        font-size: 12px;
+    }
+
+    .subHead {
+        font-size: 22px;
+        line-height: .75cm;
+        letter-spacing: .02cm;
+    }
+
+    .heading {
+        font-size: 14px;
+    }
+
+    .service {
+        width: 6cm;
+    }
+
+    .sname {
+        font-size: 19px;
+        line-height: .73cm;
+    }
+
+    .sdesc {
+        font-size: 14px;
+    }
+
+    .simg {
+        width: 1.2cm;
+        height: 1.2cm;
+    }
+
+    .contactBox {
+        flex-direction: column-reverse;
+    }
+
+    .contactLeft {
+        width: 100%;
+
+
+    }
+
+
+    .contactRight {
+        width: auto;
+
+    }
+
+    .head-sub {
+        font-size: 22px;
+    }
+
+    .contactMed {
+        width: 7cm;
+    }
+
+    .cimg {
+        width: 1cm;
+    }
+
+    .social {
+        width: .9cm;
+    }
+
+
+
+}
+
+
+@media only screen and (max-width : 600px) {
+    .tagline {
+        font-size: 40px;
+        line-height: 1.2cm;
+        letter-spacing: .05cm;
+    }
+    .logo{
+        font-size: 24px;
+    }
+
+    .introBox {
+        gap: 4cm;
+    }
+
+    .introDets {
+        max-width: 100%;
+    }
+
+    .brightspark {
+        font-size: 12px;
+    }
+
+    .subHead {
+        font-size: 22px;
+        line-height: .75cm;
+        letter-spacing: .02cm;
+    }
+
+    .heading {
+        font-size: 14px;
+    }
+
+    .service {
+        width: 100%;
+    }
+
+    .sname {
+        font-size: 20px;
+        line-height: .73cm;
+    }
+
+    .sdesc {
+        font-size: 14px;
+    }
+
+    .simg {
+        width: 1.2cm;
+        height: 1.2cm;
+    }
+
+    .contactBox {
+        flex-direction: column-reverse;
+    }
+
+    .contactLeft {
+        width: 100%;
+
+
+    }
+
+
+    .contactRight {
+        width: auto;
+
+    }
+
+    .head-sub {
+        font-size: 20px;
+    }
+
+    .contactMed {
+        width: 6cm;
+    }
+
+    .cimg {
+        width: 1cm;
+    }
+
+    .social {
+        width: .9cm;
+    }
+
+
+
+}
+
+@media only screen and (max-width : 500px) {
+    .tagline {
+        font-size: 35px;
+        line-height: 1.1cm;
+        letter-spacing: .05cm;
+    }
+
+    .logo{
+        font-size: 22px;
+    }
+
+    .introBox {
+        gap: 4cm;
+    }
+
+    .introDets {
+        max-width: 100%;
+    }
+
+    .brightspark {
+        font-size: 12px;
+    }
+
+    .subHead {
+        font-size: 20px;
+        line-height: .75cm;
+        letter-spacing: .02cm;
+    }
+
+    .heading {
+        font-size: 14px;
+    }
+
+    .service {
+        width: 100%;
+    }
+
+    .sname {
+        font-size: 20px;
+        line-height: .73cm;
+    }
+
+    .sdesc {
+        font-size: 14px;
+    }
+
+    .simg {
+        width: 1.2cm;
+        height: 1.2cm;
+    }
+
+    .contactBox {
+        flex-direction: column-reverse;
+    }
+
+    .contactLeft {
+        width: 100%;
+
+
+    }
+
+
+    .contactRight {
+        width: auto;
+
+    }
+
+    .head-sub {
+        font-size: 18px;
+    }
+
+    .contactMed {
+        width: 100%;
+    }
+
+    .cimg {
+        width: 1cm;
+    }
+
+    .social {
+        width: .9cm;
+    }
+
+    .contactMeds {
+        justify-content: flex-start;
+    }
+
+    .contactInp,
+    .contactText {
+        font-size: 15px;
+    }
+
+
+
+}
+
+@media only screen and (max-width : 500px) {
+    .tagline {
+        font-size: 35px;
+        line-height: 1.1cm;
+        letter-spacing: .05cm;
+    }
+
+    .introBox {
+        gap: 4cm;
+    }
+
+    .introDets {
+        max-width: 100%;
+    }
+
+    .brightspark {
+        font-size: 12px;
+    }
+
+    .subHead {
+        font-size: 20px;
+        line-height: .75cm;
+        letter-spacing: .02cm;
+    }
+
+    .desc {
+        font-size: 15px;
+    }
+
+    .heading {
+        font-size: 14px;
+    }
+
+    .service {
+        width: 100%;
+    }
+
+    .sname {
+        font-size: 20px;
+        line-height: .73cm;
+    }
+
+    .sdesc {
+        font-size: 14px;
+    }
+
+    .simg {
+        width: 1.2cm;
+        height: 1.2cm;
+    }
+
+    .contactBox {
+        flex-direction: column-reverse;
+    }
+
+    .contactLeft {
+        width: 100%;
+
+
+    }
+
+
+    .contactRight {
+        width: auto;
+
+    }
+
+    .head-sub {
+        font-size: 18px;
+    }
+
+    .contactMed {
+        width: 100%;
+    }
+
+    .cimg {
+        width: 1cm;
+    }
+
+    .social {
+        width: .9cm;
+    }
+
+    .contactMeds {
+        justify-content: flex-start;
+    }
+
+    .contactInp,
+    .contactText {
+        font-size: 15px;
+    }
+
+
+
+}

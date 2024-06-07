@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Poppins;
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.App {
+  min-height: 100svh;
+  // border: 5px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  // display: grid;
+  // grid-template-rows: 1fr auto 1fr;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+}

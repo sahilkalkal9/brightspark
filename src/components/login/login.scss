@@ -1,0 +1,72 @@
+.login-box {
+    // border: 1px solid red;
+    display: flex;
+    justify-content: center;
+    padding: 0cm 5vw;
+}
+
+.login-form {
+    width: 13cm;
+    display: flex;
+    flex-direction: column;
+    gap: .3cm;
+    border-radius: 10px;
+    background-color: hsl(210, 100%, 95%);
+    padding: .5cm .7cm;
+    margin-top: 3cm;
+}
+
+.createBox {
+    display: flex;
+    gap: .2cm;
+    margin-top: .5cm;
+    justify-content: center;
+}
+
+.register {
+    font-size: 15px;
+    color: rgb(59, 59, 59);
+}
+
+.cp {
+    cursor: pointer;
+    transition: .2s;
+    border-bottom: 2px solid transparent;
+
+    &:hover {
+        border-bottom: 2px solid #58c25d;
+    }
+}
+
+#invalidCred,
+#manyAttempts,
+#resetPass,
+#noUser {
+    display: none;
+}
+
+
+.lip {
+    border: 2px solid hsl(214, 36%, 67%);
+
+    &:focus {
+        border: 2px solid hsl(215, 67%, 52%);
+
+    }
+}
+
+.lsb {
+    background-color: hsl(215, 67%, 52%);
+
+}
+
+.lht {
+    color: hsl(215, 67%, 52%);
+}
+
+
+@media only screen and (max-width : 700px){
+    .login-form{
+        width: 100%;
+    }
+}

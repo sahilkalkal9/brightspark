@@ -1,0 +1,26 @@
+.Footer {
+    margin-top: 3cm;
+    background-color: #626262;
+}
+
+.footer-box {
+    padding: .5cm;
+    display: flex;
+    justify-content: center;
+}
+
+.madeby {
+    color: white;
+    text-align: center;
+    font-size: 14px;
+
+    a {
+        color: white;
+        transition: .2s;
+        border-bottom: 2px solid transparent;
+
+        &:hover {
+            border-bottom: 2px solid whitesmoke;
+        }
+    }
+}

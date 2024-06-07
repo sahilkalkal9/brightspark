@@ -1,0 +1,91 @@
+.profile-box {
+    // border: 1px solid red;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: .5cm;
+    padding: 1cm 5vw;
+
+}
+
+.logOutBox {
+    display: flex;
+    justify-content: flex-end;
+    // border: 2px solid black;
+    width: 100%;
+}
+
+.logOut {
+    background-color: red;
+    padding: .15cm .4cm;
+    border: none;
+    font-size: 14px;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.delete {
+    font-size: 13px;
+    color: red;
+    width: fit-content;
+    cursor: pointer;
+    transition: .2s;
+    border-bottom: 2px solid transparent;
+
+    &:hover {
+        border-bottom: 2px solid red;
+    }
+
+}
+
+.welcomeText {
+    font-size: 30px;
+}
+
+.userWelcome {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .1cm;
+}
+
+.contacts {
+    display: flex;
+    justify-content: center;
+
+    flex-wrap: wrap;
+    gap: .3cm;
+    margin-top: .7cm;
+}
+
+.chead {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.contactP {
+    width: 10cm;
+    background-color: rgba(137, 43, 226, 0.08);
+    padding: .3cm .5cm;
+    border-radius: 10px;
+
+}
+
+.ctext {
+    font-size: 15px;
+    word-break: break-all;
+}
+
+.ctextHead {
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.clower {
+    display: flex;
+    flex-direction: column;
+    gap: .1cm;
+    margin-top: .2cm;
+}

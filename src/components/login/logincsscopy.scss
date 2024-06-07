@@ -1,0 +1,45 @@
+.login-box {
+    // border: 1px solid red;
+    display: flex;
+    justify-content: center;
+}
+
+.login-form {
+    width: 13cm;
+    display: flex;
+    flex-direction: column;
+    gap: .3cm;
+    border-radius: 10px;
+    background-color: rgba(137, 43, 226, 0.08);
+    padding: .5cm .7cm;
+    margin-top: 3cm;
+}
+
+.createBox {
+    display: flex;
+    gap: .2cm;
+    margin-top: .5cm;
+    justify-content: center;
+}
+
+.register {
+    font-size: 15px;
+    color: rgb(59, 59, 59);
+}
+
+.cp {
+    cursor: pointer;
+    transition: .2s;
+    border-bottom: 2px solid transparent;
+
+    &:hover {
+        border-bottom: 2px solid blueviolet;
+    }
+}
+
+#invalidCred,
+#manyAttempts,
+#resetPass,
+#noUser {
+    display: none;
+}
