@@ -7,8 +7,6 @@ import { useCollectionData } from "react-firebase-hooks/firestore";
 
 function Login() {
     const navigate = useNavigate();
-    const userRef = firestore.collection("users");
-    const [users] = useCollectionData(userRef);
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
     const [error, setError] = useState({
@@ -21,7 +19,7 @@ function Login() {
         if (auth.currentUser) {
             navigate("/profile");
         }
-    }, [auth.currentUser, navigate]);
+    });
 
     const handleSignIn = async (e) => {
         e.preventDefault();

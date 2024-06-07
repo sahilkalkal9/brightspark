@@ -1,12 +1,12 @@
 import Nav from "../nav/nav"
 import "./profile.scss"
 import { auth, firestore } from "../../firebase"
-import { Link, useNavigate } from "react-router-dom"
+import { useNavigate } from "react-router-dom"
 import { useCollectionData } from "react-firebase-hooks/firestore"
 import { useEffect } from "react"
-import firebase from "firebase/compat/app"
+
 import { format } from "date-fns";
-import { deleteDoc, doc } from "firebase/firestore"
+
 
 function Profile() {
 
@@ -67,7 +67,7 @@ function Profile() {
                                             ? (
                                                 <div className="contact-list-box">
                                                     {
-                                                        contacts != 0 ? <p style={{ textAlign: "center" }} >
+                                                        contacts !== 0 ? <p style={{ textAlign: "center" }} >
                                                             Here is the list of contact form submissions.
                                                         </p> : null
                                                     }

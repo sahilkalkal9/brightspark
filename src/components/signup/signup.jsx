@@ -5,7 +5,6 @@ import { auth, firestore } from "../../firebase"
 import { useCollectionData } from 'react-firebase-hooks/firestore';
 import { Link, useNavigate } from "react-router-dom"
 import { useEffect, useState } from "react"
-import { useAuthState } from 'react-firebase-hooks/auth';
 
 
 
