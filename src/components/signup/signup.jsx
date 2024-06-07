@@ -61,7 +61,12 @@ function Signup() {
                 //     document.getElementById("invalidEmail").style.display = "block";
                 // } else {
 
-                document.getElementById("signupButton").innerHTML = "Signing Up.."
+
+                const signupButton = document.getElementById("signupButton")
+
+                if (signupButton) {
+                    signupButton.value = "Signing Up...."
+                }
 
                 await auth.createUserWithEmailAndPassword(email, password);
 
@@ -250,7 +255,7 @@ function Signup() {
 
                     <input type="password" onKeyDown={handleBackspacePass} placeholder="Password" value={password} onChange={passChange} className="contactInp lip" />
                     <p id="invalidPass" className="incorrect-chatpass" >Password must be of atleast 6 characters</p>
-                    <input type="submit" className="subForm lsb" id="signupButton" value="Register" disabled={usernameExist || emailExist || hasCapitalLetter || invalidEmail || hasTwoDots || hasWhitespace || hasSpecialCharacter || invalidPass} />
+                    <input type="submit" className="subForm lsb" id="signupButton" value="Sign Up" disabled={usernameExist || emailExist || hasCapitalLetter || invalidEmail || hasTwoDots || hasWhitespace || hasSpecialCharacter || invalidPass} />
 
                     <div className="createBox">
                         <p className="register">Already a member ?</p>

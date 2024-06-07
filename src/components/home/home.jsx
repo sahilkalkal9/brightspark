@@ -230,12 +230,12 @@ function Home() {
                                     </div>
                                 )
                                     : (
-                                        <form onSubmit={submitMessage} className="contact-form">
+                                        <form onSubmit={submitMessage} className="contact-form" autoComplete={false} >
                                             <p className="heading tl ch mb3 ch">Send us a message</p>
-                                            <input name="name" type="text" placeholder="Full name" value={formData.name} onChange={handleInputChange} className="contactInp" />
-                                            <input name="email" type="text" placeholder="Email address" value={formData.email} onChange={handleInputChange} className="contactInp" />
-                                            <input name="phone" type="number" placeholder="Phone number" value={formData.phone} onChange={handleInputChange} className="contactInp no-arrows" />
-                                            <textarea name="message" className="contactText" value={formData.message} onChange={handleInputChange} placeholder="Write message here" />
+                                            <input required name="name" type="text" placeholder="Full name" value={formData.name} onChange={handleInputChange} className="contactInp" />
+                                            <input required name="email" type="text" placeholder="Email address" value={formData.email} onChange={handleInputChange} className="contactInp" />
+                                            <input required name="phone" type="number" placeholder="Phone number" value={formData.phone} onChange={handleInputChange} className="contactInp no-arrows" />
+                                            <textarea required name="message" className="contactText" value={formData.message} onChange={handleInputChange} placeholder="Write message here" />
                                             <input type="submit" className="subForm" value="Send message" />
                                         </form>
                                     )

@@ -28,9 +28,11 @@ function Login() {
         }
 
         try {
-            const signInButton = document.getElementById("signInButton");
+
+            const signInButton = document.getElementById("signInButton")
+
             if (signInButton) {
-                signInButton.innerHTML = "Signing In..";
+                signInButton.value = "Logging In..."
             }
 
             await auth.signInWithEmailAndPassword(email, password);
@@ -55,11 +57,6 @@ function Login() {
             }
 
             setError(newError);
-        } finally {
-            const signInButton = document.getElementById("signInButton");
-            if (signInButton) {
-                signInButton.innerHTML = "Logging In...";
-            }
         }
     };
 
@@ -78,7 +75,7 @@ function Login() {
         <div className="Login">
             <Nav />
             <div className="login-box">
-                <form onSubmit={handleSignIn} className="login-form">
+                <form onSubmit={handleSignIn} className="login-form"  >
                     <p className="heading tl mb3 lht">Log in to your account</p>
                     <input
                         type="email"
@@ -122,7 +119,7 @@ function Login() {
                     <div className="createBox">
                         <p className="register">New member ?</p>
                         <Link to="/signup">
-                            <p className="register cp">Register</p>
+                            <p className="register cp">Sign Up</p>
                         </Link>
                     </div>
                 </form>
