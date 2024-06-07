@@ -45,11 +45,11 @@ function Login() {
                 userNotFound: false,
             };
 
-            if (err.code == "auth/user-not-found") {
+            if (err.code === "auth/user-not-found") {
                 newError.userNotFound = true;
-            } else if (err.code == "auth/wrong-password") {
+            } else if (err.code === "auth/wrong-password") {
                 newError.invalidCredentials = true;
-            } else if (err.code == "auth/too-many-requests") {
+            } else if (err.code === "auth/too-many-requests") {
                 newError.manyAttempts = true;
             }
 
@@ -68,7 +68,7 @@ function Login() {
     };
 
     const handleKeyDown = (e, errorKey) => {
-        if (e.key == "Backspace") {
+        if (e.key === "Backspace") {
             setError((prevError) => ({ ...prevError, [errorKey]: false }));
         }
     };

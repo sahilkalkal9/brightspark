@@ -52,11 +52,11 @@ function Signup() {
         try {
 
             users && users.map((ut) => (
-                username == ut.username
+                username === ut.username
                     ? create = 1
                     : console.log()
             ))
-            if (create == 0) {
+            if (create === 0) {
                 // if (!allowedDomains.includes(emailDomain)) {
                 //     setInvalidEmail(true)
                 //     document.getElementById("invalidEmail").style.display = "block";
@@ -92,16 +92,16 @@ function Signup() {
 
 
         } catch (error) {
-            if (error.code == "auth/email-already-in-use") {
+            if (error.code === "auth/email-already-in-use") {
                 setEmailExist(true)
                 document.getElementById("emailExist").style.display = "block";
             }
-            else if (error.code == "auth/weak-password") {
+            else if (error.code === "auth/weak-password") {
                 setInvalidPass(true)
                 document.getElementById("invalidPass").style.display = "block";
             }
 
-            else if (error.code == "auth/invalid-email") {
+            else if (error.code === "auth/invalid-email") {
                 setInvalidEmail(true)
                 document.getElementById("invalidEmail").style.display = "block";
             }
@@ -133,12 +133,12 @@ function Signup() {
         } else if (hasTwoDotss) {
             setHasTwoDots(true);
             document.getElementById("twoDots").style.display = "block";
-        } else if (create == 1) {
+        } else if (create === 1) {
             setUsernameExist(true)
             document.getElementById("usernameExist").style.display = "block";
 
         }
-        else if (inputValue == "") {
+        else if (inputValue === "") {
             setUsernameExist(false)
             setHasCapitalLetter(false)
             setHasSpecialCharacter(false)
@@ -162,7 +162,7 @@ function Signup() {
     }
 
     const handleBackspaceUsername = (event) => {
-        if (event.key == 'Backspace') {
+        if (event.key === 'Backspace') {
             document.getElementById("capitalUsername").style.display = "none"
             document.getElementById("usernameExist").style.display = "none";
             document.getElementById("twoDots").style.display = "none"
@@ -176,7 +176,7 @@ function Signup() {
         setEmail(emailValue)
         if (emailExist) {
             document.getElementById("emailExist").style.display = "block";
-        } else if (emailValue == "") {
+        } else if (emailValue === "") {
             setEmailExist(false)
             setInvalidEmail(false)
         } else if (invalidEmail) {
@@ -195,7 +195,7 @@ function Signup() {
     }
 
     const handleBackspaceEmail = (event) => {
-        if (event.key == 'Backspace') {
+        if (event.key === 'Backspace') {
             setEmailExist(false)
             setInvalidEmail(false)
             document.getElementById("emailExist").style.display = "none";
@@ -208,7 +208,7 @@ function Signup() {
         setPassword(passValue)
         if (invalidPass) {
             document.getElementById("invalidPass").style.display = "block";
-        } else if (passValue == "") {
+        } else if (passValue === "") {
 
             setInvalidPass(false)
         }
@@ -221,7 +221,7 @@ function Signup() {
     }
 
     const handleBackspacePass = (event) => {
-        if (event.key == 'Backspace') {
+        if (event.key === 'Backspace') {
             setInvalidPass(false)
             document.getElementById("invalidPass").style.display = "none";
         }

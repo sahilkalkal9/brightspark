@@ -44,7 +44,7 @@ function Profile() {
                 <div className="welcomeBox">
                     {
                         users && users.map((u) => (
-                            auth.currentUser?.uid == u.uid
+                            auth.currentUser?.uid === u.uid
                                 ? <p className="welcomeText">Welcome {u.name},</p>
                                 : null
                         ))
@@ -52,9 +52,9 @@ function Profile() {
                 </div>
                 {
                     users && users.map((u) => (
-                        auth.currentUser?.uid == u.uid
+                        auth.currentUser?.uid === u.uid
                             ? (
-                                u.role == "user"
+                                u.role === "user"
                                     ? (
                                         <p style={{ textAlign: "center" }} >
                                             This is your profile page. Currently there is nothing much for you.
@@ -63,7 +63,7 @@ function Profile() {
                                         </p>
                                     )
                                     : (
-                                        u.role == "admin"
+                                        u.role === "admin"
                                             ? (
                                                 <div className="contact-list-box">
                                                     {
@@ -73,7 +73,7 @@ function Profile() {
                                                     }
                                                     <div className="contacts">
                                                         {
-                                                            contacts == 0
+                                                            contacts === 0
                                                                 ?
                                                                 <p className="noCont">No contact submissions</p>
                                                                 : (
