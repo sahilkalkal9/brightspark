@@ -267,6 +267,7 @@
 .medDetText {
     color: rgb(50, 50, 50);
     font-size: 14px;
+    word-break: break-all;
 }
 
 .medHead {
@@ -306,13 +307,13 @@
 .contactRight {
     width: 18cm;
     // border: 1px solid green;
-    padding: .3cm;
+    // padding: .3cm;
 }
 
 .contact-form {
     display: flex;
     flex-direction: column;
-    width: calc(100% - .8cm);
+    width: calc(100% - .2cm);
     border-radius: 10px;
     gap: .3cm;
     // background-color: rgba(137, 43, 226, 0.08);
@@ -594,14 +595,14 @@
     }
 
     .contactLeft {
-        width: 100%;
+        width: calc(100% - .7cm);
 
 
     }
 
 
     .contactRight {
-        width: auto;
+        width: calc(100% - .7cm);
 
     }
 
@@ -671,14 +672,14 @@
     }
 
     .contactLeft {
-        width: 100%;
+        width: calc(100% - .7cm);
 
 
     }
 
 
     .contactRight {
-        width: auto;
+        width: calc(100% - .7cm);
 
     }
 
@@ -690,7 +691,7 @@
         width: 8cm;
     }
 
-    .logo{
+    .logo {
         font-size: 28px;
     }
 
@@ -704,7 +705,8 @@
         line-height: 1.4cm;
         letter-spacing: .05cm;
     }
-    .logo{
+
+    .logo {
         font-size: 26px;
     }
 
@@ -753,14 +755,14 @@
     }
 
     .contactLeft {
-        width: 100%;
+        width: calc(100% - .7cm);
 
 
     }
 
 
     .contactRight {
-        width: auto;
+        width: calc(100% - .7cm);
 
     }
 
@@ -791,7 +793,8 @@
         line-height: 1.2cm;
         letter-spacing: .05cm;
     }
-    .logo{
+
+    .logo {
         font-size: 24px;
     }
 
@@ -840,14 +843,14 @@
     }
 
     .contactLeft {
-        width: 100%;
+        width: calc(100% - .7cm);
 
 
     }
 
 
     .contactRight {
-        width: auto;
+        width: calc(100% - .7cm);
 
     }
 
@@ -873,12 +876,12 @@
 
 @media only screen and (max-width : 500px) {
     .tagline {
-        font-size: 35px;
-        line-height: 1.1cm;
+        font-size: 37px;
+        line-height: 1.2cm;
         letter-spacing: .05cm;
     }
 
-    .logo{
+    .logo {
         font-size: 22px;
     }
 
@@ -900,100 +903,8 @@
         letter-spacing: .02cm;
     }
 
-    .heading {
-        font-size: 14px;
-    }
-
-    .service {
-        width: 100%;
-    }
-
-    .sname {
-        font-size: 20px;
-        line-height: .73cm;
-    }
-
-    .sdesc {
-        font-size: 14px;
-    }
-
-    .simg {
-        width: 1.2cm;
-        height: 1.2cm;
-    }
-
-    .contactBox {
-        flex-direction: column-reverse;
-    }
-
-    .contactLeft {
-        width: 100%;
-
-
-    }
-
-
-    .contactRight {
-        width: auto;
-
-    }
-
-    .head-sub {
-        font-size: 18px;
-    }
-
-    .contactMed {
-        width: 100%;
-    }
-
-    .cimg {
-        width: 1cm;
-    }
-
-    .social {
-        width: .9cm;
-    }
-
-    .contactMeds {
-        justify-content: flex-start;
-    }
-
-    .contactInp,
-    .contactText {
-        font-size: 15px;
-    }
-
-
-
-}
-
-@media only screen and (max-width : 500px) {
-    .tagline {
-        font-size: 35px;
-        line-height: 1.1cm;
-        letter-spacing: .05cm;
-    }
-
-    .introBox {
-        gap: 4cm;
-    }
-
-    .introDets {
-        max-width: 100%;
-    }
-
-    .brightspark {
-        font-size: 12px;
-    }
-
-    .subHead {
-        font-size: 20px;
-        line-height: .75cm;
-        letter-spacing: .02cm;
-    }
-
     .desc {
-        font-size: 15px;
+        font-size: 14px;
     }
 
     .heading {
@@ -1023,14 +934,14 @@
     }
 
     .contactLeft {
-        width: 100%;
+        width: calc(100% - .7cm);
 
 
     }
 
 
     .contactRight {
-        width: auto;
+        width: calc(100% - .7cm);
 
     }
 
@@ -1062,3 +973,99 @@
 
 
 }
+
+// @media only screen and (max-width : 500px) {
+//     .tagline {
+//         // font-size: 35px;
+//         line-height: 1.1cm;
+//         letter-spacing: .05cm;
+//     }
+
+//     .introBox {
+//         gap: 4cm;
+//     }
+
+//     .introDets {
+//         max-width: 100%;
+//     }
+
+//     .brightspark {
+//         font-size: 12px;
+//     }
+
+//     .subHead {
+//         font-size: 20px;
+//         line-height: .75cm;
+//         letter-spacing: .02cm;
+//     }
+
+//     .desc {
+//         font-size: 15px;
+//     }
+
+//     .heading {
+//         font-size: 14px;
+//     }
+
+//     .service {
+//         width: 100%;
+//     }
+
+//     .sname {
+//         font-size: 20px;
+//         line-height: .73cm;
+//     }
+
+//     .sdesc {
+//         font-size: 14px;
+//     }
+
+//     .simg {
+//         width: 1.2cm;
+//         height: 1.2cm;
+//     }
+
+//     .contactBox {
+//         flex-direction: column-reverse;
+//     }
+
+//     .contactLeft {
+//         width: 100%;
+
+
+//     }
+
+
+//     .contactRight {
+//         width: auto;
+
+//     }
+
+//     .head-sub {
+//         font-size: 18px;
+//     }
+
+//     .contactMed {
+//         width: 100%;
+//     }
+
+//     .cimg {
+//         width: 1cm;
+//     }
+
+//     .social {
+//         width: .9cm;
+//     }
+
+//     .contactMeds {
+//         justify-content: flex-start;
+//     }
+
+//     .contactInp,
+//     .contactText {
+//         font-size: 15px;
+//     }
+
+
+
+// }
